@@ -1,4 +1,4 @@
-# Vim Syntax Highlighting for Singularity files
+# Vim Syntax Highlighting for Singularity/Apptainer files
 
 *Based on https://github.com/singularityhub/singularity.lang, including only the vim
 part (thus making it easier to install).*
