@@ -1,48 +1,24 @@
-# Singularity.lang
+# Vim Syntax Highlighting for Singularity files
 
-Welcome to the Singularity.lang repo! Here we will provide several syntax
-highlighters for some of your favorite languages. 
+*Based on https://github.com/singularityhub/singularity.lang, including only the vim
+part (thus making it easier to install).*
 
- - [gedit](gedit)
- - [vim](vim)
- - [nano](nano)
+![img/vim.png](img/vim.png)
 
+![img/vim2.png](img/vim2.png)
 
-Each language has its own set of README instructions with corresponding 
-files in the subfolders linked above, and you can follow the instructions
-to have the editor render your Singularity recipe files. For example,
-here is the before and after shot for gedit.
+## Installation
 
-**Before Install**
+### Vundle
 
-![gedit/img/before-install.png](gedit/img/before-install.png)
+Add the following to your vimrc:
 
-**After Install**
-
-![gedit/img/after-install.png](gedit/img/after-install.png)
-
-So beautiful!
-
-## Install
-Installation means simply copying the file into the language-specs folder
-that your gedit installation uses. For example:
-
-**1. Clone the Repository**
-
-```bash
-git clone https://github.com/singularityhub/singularity.lang
-cd singularity.lang
+```vim
+Plugin 'luator/singularity.vim'
 ```
 
-**2. Move the syntax file**
+### neovim's vim.pack
 
-See the README in each subfolder for specific instructions! Generally the last
-step of install is to move the file to some language spec folder of the software,
-and then to restart the editor(s).
-
-## Contributing
-
-If you are looking for the Atom syntax highlighter, see
- [language-singularity](https://github.com/singularityhub/language-singularity). 
-If you would like to add an editor, please open an issue or Pull Request if you
-have an editor to contribute.
+```lua
+vim.pack.add({ 'https://github.com/luator/singularity.vim' })
+```
